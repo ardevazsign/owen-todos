@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.input-div{
+  margin-bottom: 20px;
+}
+.addBtn{
+  background-color: gainsboro;
+  padding: 5px 20px 5px 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.addBtn:hover{
+  border: 1px solid white;
+  background-color: goldenrod;
+  color: white;
+}
+input{
+  background-color: azure;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  width: auto 1000px;
+  padding: 7px 20px 5px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.2);
+}
+input:hover{
+  border: 1px solid whitesmoke;
+  background-color: gainsboro;
+}
+ul{
+  background-color:rgb(46, 241, 215);
+}
+ul li{
+  list-style: none;
+  margin-left: 50px;
+}
+li{
+  padding: 10px 20px 10px 10px;
+  position: relative;
+  margin-left: 100px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+li:hover{
+  background-color: gainsboro;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close{
+  background-color: aqua;
+  border: 1px solid white;
+  text-align: right;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  top: 12%;
+  left: 90%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.close:hover{
+  background-color: red;
+  color: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.2);
+}
