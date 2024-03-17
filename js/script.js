@@ -12,10 +12,22 @@ function addCloseBtn(li) {
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
+
+  const oddEven = document.querySelectorAll("li");
+
+  for (let i = 0; i < oddEven.length; i++) {
+    if (i % 2 === 0) {
+      oddEven[i].style.backgroundColor = "lightgrey"; 
+    } else {
+      oddEven[i].style.backgroundColor = "darkgray";
+     }
+}
+
 }
 
 //  to create Li
 function createLi(text, isDone = false, id = currentId) {
+
   let li = document.createElement("li"); 
   li.innerText = text;
   li.dataset.id = id;
@@ -24,6 +36,8 @@ function createLi(text, isDone = false, id = currentId) {
   addCloseBtn(li);
 }
 
+  
+ 
 
 function fillTodoList() {
   getTodos().then((todos) => {
@@ -62,15 +76,18 @@ addBtnEl.addEventListener("click", () => {
 //     }
 // });
 
+
+
 //  Event delegation
 myUL.addEventListener("click", (e) => {
   if (e.target.tagName === "LI") {
-     updateTodo(e.target.dataset.id, e.target.classList.contains("checked"));
-    e.target.classList.toggle("checked");
+      updateTodo(e.target.dataset.id, e.target.classList.contains("checked"));
+      e.target.classList.toggle("checked");
+    
   }
   
   if (e.target.getAttribute("class") === "close") {
-    if (confirm("Are you sure you want to delete this todo")) {
+    if (confirm("Are you sure you want to delete this todo?")) {
          e.target.parentNode.remove();
          deleteTodo(e.target.parentElement.getAttribute("data-id"));
     }

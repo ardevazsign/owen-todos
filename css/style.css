@@ -24,7 +24,7 @@
 }
 .addBtn:hover{
   border: 1px solid white;
-  background-color: goldenrod;
+  background-color: darkgray;
   color: white;
 }
 input{
@@ -42,11 +42,14 @@ input:hover{
   background-color: gainsboro;
 }
 ul{
-  background-color:rgb(46, 241, 215);
+  background-color: aqua;
 }
 ul li{
   list-style: none;
   margin-left: 50px;
+}
+ul li:hover{
+  background-color: deepskyblue;
 }
 li{
   padding: 10px 20px 10px 10px;
@@ -57,7 +60,7 @@ li{
   
 }
 li:hover{
-  background-color: gainsboro;
+  background-color: deepskyblue;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
       0 4px 8px rgba(0, 0, 0, 0.2);
